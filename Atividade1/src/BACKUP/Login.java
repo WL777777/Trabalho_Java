@@ -194,13 +194,21 @@ public class Login extends javax.swing.JFrame {
         
         UsuarioDAO objusuariodao = new UsuarioDAO();
         ResultSet rsusuariodao = objusuariodao.autenticacaoUsuario(objusuariodto);
-        
+//            if(username == "admin" && senha =="123")
+//            {MenuAdmin objMenuAdm.setVisible(true);}
+
+
+            
             if (rsusuariodao.next()) {
-                //vai chamar a tela que eu quero abrir.
+                if(username.equals("Admin") && senha.equals("123")) {
+                     MenuADM objmenuadmview = new MenuADM();
+                objmenuadmview.setVisible(true);
+                 dispose();
+                }else {
                 Menu objmenuview = new Menu();
                 objmenuview.setVisible(true);
                 
-                dispose();
+                dispose();}
             }else{
                 // enviar uma msg dizendo incorreto.
                 JOptionPane.showMessageDialog(null, "Usuario ou senha inválida");

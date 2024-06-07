@@ -286,8 +286,8 @@ public class ControleUsersADM extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAlterarActionPerformed
 
     private void LABELimgvoltarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LABELimgvoltarMouseClicked
-      Menu objmenuview = new Menu();
-                objmenuview.setVisible(true);
+      MenuADM objmenuADMview = new MenuADM();
+                objmenuADMview.setVisible(true);
                 
                 dispose();
     }//GEN-LAST:event_LABELimgvoltarMouseClicked

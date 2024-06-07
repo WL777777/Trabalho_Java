@@ -4,18 +4,16 @@
  */
 package BACKUP;
 
-import VIEW.*;
-
 /**
  *
- * @author edval
+ * @author raulb
  */
-public class Menu extends javax.swing.JFrame {
+public class MenuADM extends javax.swing.JFrame {
 
     /**
-     * Creates new form Menu
+     * Creates new form MenuADM
      */
-    public Menu() {
+    public MenuADM() {
         initComponents();
     }
 
@@ -29,26 +27,36 @@ public class Menu extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
         BotaoCadastrouUser = new javax.swing.JButton();
         BotaoSair = new javax.swing.JButton();
         BotaoCadastroAula1 = new javax.swing.JButton();
         gif = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(29, 27, 77));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton1.setBackground(new java.awt.Color(0, 102, 204));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("MENU");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 155, 335, 91));
+
         BotaoCadastrouUser.setBackground(new java.awt.Color(0, 102, 204));
         BotaoCadastrouUser.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoCadastrouUser.setText("INGLÊS");
+        BotaoCadastrouUser.setText("CADASTRE NOVOS USUÁRIOS");
         BotaoCadastrouUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotaoCadastrouUserActionPerformed(evt);
             }
         });
-        jPanel1.add(BotaoCadastrouUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 335, 92));
+        jPanel1.add(BotaoCadastrouUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 258, 335, 92));
 
         BotaoSair.setBackground(new java.awt.Color(255, 51, 51));
         BotaoSair.setForeground(new java.awt.Color(255, 255, 255));
@@ -58,17 +66,17 @@ public class Menu extends javax.swing.JFrame {
                 BotaoSairActionPerformed(evt);
             }
         });
-        jPanel1.add(BotaoSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 335, 93));
+        jPanel1.add(BotaoSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 467, 335, 93));
 
         BotaoCadastroAula1.setBackground(new java.awt.Color(0, 102, 204));
         BotaoCadastroAula1.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoCadastroAula1.setText("ESPANHOL");
+        BotaoCadastroAula1.setText("CADASTRE NOVAS AULAS");
         BotaoCadastroAula1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotaoCadastroAula1ActionPerformed(evt);
             }
         });
-        jPanel1.add(BotaoCadastroAula1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 335, 93));
+        jPanel1.add(BotaoCadastroAula1, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 362, 335, 93));
 
         gif.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         gif.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ezgif-6-1058553f29.gif"))); // NOI18N
@@ -78,34 +86,42 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 968, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 860, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 578, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BotaoCadastrouUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoCadastrouUserActionPerformed
-        VIZU objvizuview = new VIZU();
-        objvizuview.setVisible(true);            
-                dispose();        // TODO add your handling code here:
-    }//GEN-LAST:event_BotaoCadastrouUserActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void BotaoSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSairActionPerformed
-      System.exit(0);  // TODO add your handling code here:
+        System.exit(0);  // TODO add your handling code here:
     }//GEN-LAST:event_BotaoSairActionPerformed
 
     private void BotaoCadastroAula1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoCadastroAula1ActionPerformed
-      VIZU2 objvizu2view = new VIZU2();
-        objvizu2view.setVisible(true);            
-                dispose();       
+        ControleMaterias objcontrolemateriasview = new ControleMaterias();
+        objcontrolemateriasview .setVisible(true);
+        dispose();
     }//GEN-LAST:event_BotaoCadastroAula1ActionPerformed
+
+    private void BotaoCadastrouUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoCadastrouUserActionPerformed
+        ControleUsersADM objcontroleusersview = new ControleUsersADM();
+        objcontroleusersview.setVisible(true);
+        dispose();        // TODO add your handling code here:
+    }//GEN-LAST:event_BotaoCadastrouUserActionPerformed
 
     /**
      * @param args the command line arguments
@@ -124,21 +140,20 @@ public class Menu extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuADM.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuADM.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuADM.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuADM.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Menu().setVisible(true);
+                new MenuADM().setVisible(true);
             }
         });
     }
@@ -148,6 +163,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton BotaoCadastrouUser;
     private javax.swing.JButton BotaoSair;
     private javax.swing.JLabel gif;
+    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

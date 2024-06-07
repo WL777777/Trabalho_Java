@@ -385,10 +385,10 @@ public class ControleMaterias extends javax.swing.JFrame {
     }//GEN-LAST:event_txtidActionPerformed
 
     private void LABELimgvoltarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LABELimgvoltarMouseClicked
-        Menu objmenuview = new Menu();
-        objmenuview.setVisible(true);
-
-        dispose();
+         MenuADM objmenuADMview = new MenuADM();
+                objmenuADMview.setVisible(true);
+                
+                dispose();
     }//GEN-LAST:event_LABELimgvoltarMouseClicked
 
     /**
