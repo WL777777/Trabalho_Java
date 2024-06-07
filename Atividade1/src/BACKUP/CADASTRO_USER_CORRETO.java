@@ -47,7 +47,6 @@ public class CADASTRO_USER_CORRETO extends javax.swing.JFrame {
         quit = new javax.swing.JLabel();
         jCheckBox2 = new javax.swing.JCheckBox();
         txtsenha = new javax.swing.JPasswordField();
-        LABELimgvoltar = new javax.swing.JLabel();
         IMAGEM = new javax.swing.JLabel();
         jPasswordField2 = new javax.swing.JPasswordField();
 
@@ -122,7 +121,7 @@ public class CADASTRO_USER_CORRETO extends javax.swing.JFrame {
                 quitMouseClicked(evt);
             }
         });
-        getContentPane().add(quit, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, 20, -1));
+        getContentPane().add(quit, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 20, 20, -1));
 
         jCheckBox2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_eye_20px_1.png"))); // NOI18N
         jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
@@ -138,17 +137,8 @@ public class CADASTRO_USER_CORRETO extends javax.swing.JFrame {
         txtsenha.setBorder(null);
         getContentPane().add(txtsenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 190, 20));
 
-        LABELimgvoltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/back_button40WHITE.png"))); // NOI18N
-        LABELimgvoltar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        LABELimgvoltar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                LABELimgvoltarMouseClicked(evt);
-            }
-        });
-        getContentPane().add(LABELimgvoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 50));
-
         IMAGEM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/AF_LINGUIFY_LOGOMARCAPADRAO_RED.png"))); // NOI18N
-        getContentPane().add(IMAGEM, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -180, 510, 640));
+        getContentPane().add(IMAGEM, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -180, 480, 640));
 
         jPasswordField2.setBackground(new java.awt.Color(29, 27, 77));
         jPasswordField2.setFont(new java.awt.Font("Trebuchet MS", 0, 12)); // NOI18N
@@ -220,13 +210,6 @@ public class CADASTRO_USER_CORRETO extends javax.swing.JFrame {
         show.setEnabled(true);
     }//GEN-LAST:event_jCheckBox2ActionPerformed
 
-    private void LABELimgvoltarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LABELimgvoltarMouseClicked
-        Menu objmenuview = new Menu();
-        objmenuview.setVisible(true);
-
-        dispose();
-    }//GEN-LAST:event_LABELimgvoltarMouseClicked
-
     /**
      * @param args the command line arguments
      */
@@ -265,7 +248,6 @@ public class CADASTRO_USER_CORRETO extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel IMAGEM;
-    private javax.swing.JLabel LABELimgvoltar;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

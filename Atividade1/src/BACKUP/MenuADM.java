@@ -32,8 +32,10 @@ public class MenuADM extends javax.swing.JFrame {
         BotaoSair = new javax.swing.JButton();
         BotaoCadastroAula1 = new javax.swing.JButton();
         gif = new javax.swing.JLabel();
+        quit = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(29, 27, 77));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -46,7 +48,7 @@ public class MenuADM extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 155, 335, 91));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, 335, 91));
 
         BotaoCadastrouUser.setBackground(new java.awt.Color(0, 102, 204));
         BotaoCadastrouUser.setForeground(new java.awt.Color(255, 255, 255));
@@ -56,7 +58,7 @@ public class MenuADM extends javax.swing.JFrame {
                 BotaoCadastrouUserActionPerformed(evt);
             }
         });
-        jPanel1.add(BotaoCadastrouUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 258, 335, 92));
+        jPanel1.add(BotaoCadastrouUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, 335, 92));
 
         BotaoSair.setBackground(new java.awt.Color(255, 51, 51));
         BotaoSair.setForeground(new java.awt.Color(255, 255, 255));
@@ -66,7 +68,7 @@ public class MenuADM extends javax.swing.JFrame {
                 BotaoSairActionPerformed(evt);
             }
         });
-        jPanel1.add(BotaoSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 467, 335, 93));
+        jPanel1.add(BotaoSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 470, 335, 93));
 
         BotaoCadastroAula1.setBackground(new java.awt.Color(0, 102, 204));
         BotaoCadastroAula1.setForeground(new java.awt.Color(255, 255, 255));
@@ -76,11 +78,22 @@ public class MenuADM extends javax.swing.JFrame {
                 BotaoCadastroAula1ActionPerformed(evt);
             }
         });
-        jPanel1.add(BotaoCadastroAula1, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 362, 335, 93));
+        jPanel1.add(BotaoCadastroAula1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, 335, 93));
 
         gif.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         gif.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ezgif-6-1058553f29.gif"))); // NOI18N
-        jPanel1.add(gif, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 260, 110));
+        jPanel1.add(gif, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, 260, 110));
+
+        quit.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
+        quit.setForeground(new java.awt.Color(255, 255, 255));
+        quit.setText("X");
+        quit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        quit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                quitMouseClicked(evt);
+            }
+        });
+        jPanel1.add(quit, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 40, 20, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -122,6 +135,10 @@ public class MenuADM extends javax.swing.JFrame {
         objcontroleusersview.setVisible(true);
         dispose();        // TODO add your handling code here:
     }//GEN-LAST:event_BotaoCadastrouUserActionPerformed
+
+    private void quitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quitMouseClicked
+        System.exit(0);     // TODO add your handling code here:
+    }//GEN-LAST:event_quitMouseClicked
 
     /**
      * @param args the command line arguments
@@ -165,5 +182,6 @@ public class MenuADM extends javax.swing.JFrame {
     private javax.swing.JLabel gif;
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel quit;
     // End of variables declaration//GEN-END:variables
 }

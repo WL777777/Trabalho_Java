@@ -33,6 +33,7 @@ public class Menu extends javax.swing.JFrame {
         BotaoSair = new javax.swing.JButton();
         BotaoCadastroAula1 = new javax.swing.JButton();
         gif = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -48,7 +49,7 @@ public class Menu extends javax.swing.JFrame {
                 BotaoCadastrouUserActionPerformed(evt);
             }
         });
-        jPanel1.add(BotaoCadastrouUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 335, 92));
+        jPanel1.add(BotaoCadastrouUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 335, 92));
 
         BotaoSair.setBackground(new java.awt.Color(255, 51, 51));
         BotaoSair.setForeground(new java.awt.Color(255, 255, 255));
@@ -58,7 +59,7 @@ public class Menu extends javax.swing.JFrame {
                 BotaoSairActionPerformed(evt);
             }
         });
-        jPanel1.add(BotaoSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 335, 93));
+        jPanel1.add(BotaoSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 390, 335, 93));
 
         BotaoCadastroAula1.setBackground(new java.awt.Color(0, 102, 204));
         BotaoCadastroAula1.setForeground(new java.awt.Color(255, 255, 255));
@@ -68,23 +69,30 @@ public class Menu extends javax.swing.JFrame {
                 BotaoCadastroAula1ActionPerformed(evt);
             }
         });
-        jPanel1.add(BotaoCadastroAula1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 335, 93));
+        jPanel1.add(BotaoCadastroAula1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 335, 93));
 
         gif.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         gif.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ezgif-6-1058553f29.gif"))); // NOI18N
-        jPanel1.add(gif, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 260, 110));
+        jPanel1.add(gif, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 260, 110));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/img-linguify (2).jpg"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, -200, 710, 990));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 968, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 968, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 578, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
@@ -148,6 +156,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton BotaoCadastrouUser;
     private javax.swing.JButton BotaoSair;
     private javax.swing.JLabel gif;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
